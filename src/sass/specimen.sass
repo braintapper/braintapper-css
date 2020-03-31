@@ -1,0 +1,49 @@
+body
+  padding: var(--spacing-xl)
+  padding-left: 300px
+
+
+  & > nav
+    padding: var(--spacing-m)
+    position: fixed
+    height: 100%
+    width: 300px
+    left: 0
+    top: 0
+    overflow-y: auto
+
+
+swatch-container
+  flex: 0 1 auto
+swatch
+  display: block
+
+swatch-container
+  width: 100px
+  height: 100px
+
+swatch
+  border-radius: var(--corner-m)
+  height: 80px
+  width: 80px
+  position: relative
+
+  padding: 14px
+
+
+  swatch-info
+    position: absolute
+    bottom: 14px
+    h1, h2
+      margin: 0px !important
+    h1
+      font-size: 14px
+    h2
+      font-size: 12px
+      font-weight: normal
+
+hr
+  margin: var(--spacing-xl) 0px
+
+article[type="content"]
+  margin-top: var(--spacing--l)

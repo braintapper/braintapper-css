@@ -19,8 +19,16 @@ button, input[type="button"], input
   &:focus
     outline: none
 
-a
+a, a > em
   text-decoration: none
+
+a > em
+  font-style: normal
+
+a:hover > em
+  text-decoration: underline
+
+
 a, a:hover, a:visited, a:active
   color: var(--black)
 
@@ -33,6 +41,11 @@ html, body
 ul, ol
   list-style-type: none
 
+ul[unstyled], ol[unstyled]
+  list-style-type: none !important
+  li
+    margin-left: 0px !important
+
 table
   border-spacing: 0
   border-collapse: collapse
@@ -43,3 +56,10 @@ table
 details summary::-webkit-details-marker
   display: none
   font-size: 0px
+
+a, b, i, strong, em
+  font-weight: inherit
+  text-decoration: inherit
+
+hr
+  border-top: 1px solid var(--lightest-gray)
