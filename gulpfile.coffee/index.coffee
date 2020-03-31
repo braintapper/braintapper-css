@@ -13,11 +13,14 @@ task = require("gulp").task
 #uiTask = require("./ui.coffee")
 
 sassTask = require("./sass.coffee")
+pugTask = require("./pug.coffee")
 
 task "sass", sassTask
+task "pug", pugTask
 task "default", sassTask
 
 
 task "bot", (cb)->
 
   watch sassTask.watch, sassTask
+  watch pugTask.watch, pugTask
