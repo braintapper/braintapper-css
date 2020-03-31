@@ -6,6 +6,7 @@
     "coffeescript": "^2.4.1",
     "gulp": "^4.0.2",
     "gulp-mini-css": "0.0.3",
+    "gulp-pug": "^4.0.1",
     "gulp-sass": "^4.0.2",
     "node-sass": "^4.12.0",
     "sugar": "^2.0.6",
